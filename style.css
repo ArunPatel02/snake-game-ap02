@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#board{
+    width: 70vw;
+    height: 90vh;
+    min-width: 360px;
+    min-height: 500px;
+    background: rgb(59, 57, 57);
+    display: grid;
+    grid-template-columns: repeat(40 , 1fr);
+    grid-template-rows: repeat(40 , 1fr);
+
+}
+
+.head{
+    background-color: red;
+    border-radius: 30%;
+}
+
+.snake{
+    background-color: greenyellow;
+    border-radius: 30%;
+}
+
+.food{
+    background-color: honeydew;
+    border-radius: 50%;
+}
+.score , .hgscore{
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 1.5rem;
+}
+
+#outside{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card{
+    background-color: ivory;
+    border: 2px solid black;
+    height: 40%;
+    width: 40%;
+    min-width: 260px;
+    min-height: 300px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20%;
+    margin: 0px auto;
+}
+
+#retry{
+    width: inherit;
+    margin: 0px auto;
+    background-color: lightblue;
+    /* border: none; */
+    border-radius: 10%;
+    font-size: 1.5rem;
+}
